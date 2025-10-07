@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .animated-text {
+    animation: textMove 3s ease-in-out infinite;
+  }
+
+  @keyframes textMove {
+    0% { opacity: 0; transform: translateY(20px); }
+    50% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-20px); }
+  }
+
+  .btn-nav {
+    @apply text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors;
+  }
+
+  .btn-nav-active {
+    @apply bg-white text-black shadow-sm;
+  }
+}
