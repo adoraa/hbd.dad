@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIN</title>
+    <link rel="icon" type="image/png" href="assets/favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Sofia&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .polaroid {
+        background: white;
+        padding: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        width: 80%;
+        max-width: 300px;
+        margin: 16px auto;
+        transform-origin: center;
+      }
+      .slant-left {
+        transform: rotate(-5deg);
+      }
+      .slant-right {
+        transform: rotate(5deg);
+      }
+      .caption {
+        font-size: 0.8rem;
+        margin-top: 4px;
+        color: #333;
+      }
+      @keyframes textMove {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        50% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        100% {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+      }
+      .animated-text {
+        animation: textMove 3s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-black text-white min-h-screen flex flex-col items-center justify-start pt-8 font-[Sofia]"
+  >
+    <div class="text-3xl md:text-5xl animated-text mb-8">
+      We love you, Daddy!
+    </div>
+
+    <div class="flex flex-col items-center w-full">
+      <div class="polaroid slant-left">
+        <img
+          src="assets/fin/fin1.jpg"
+          class="rounded-lg w-full"
+          alt="Fin Photo 1"
+        />
+        <p class="caption">Our best MAN</p>
+      </div>
+      <div class="polaroid slant-right">
+        <img
+          src="assets/fin/fin2.jpg"
+          class="rounded-lg w-full"
+          alt="Fin Photo 2"
+        />
+        <p class="caption">Your smile says it all😊</p>
+      </div>
+      <div class="polaroid slant-left">
+        <img
+          src="assets/fin/fin3.jpg"
+          class="rounded-lg w-full"
+          alt="Fin Photo 3"
+        />
+        <p class="caption">Thank you for everything!</p>
+      </div>
+      <div class="polaroid slant-right">
+        <img
+          src="assets/fin/fin4.jpg"
+          class="rounded-lg w-full"
+          alt="Fin Photo 4"
+        />
+        <p class="caption">We love you always!</p>
+      </div>
+      <div class="polaroid slant-left">
+        <img
+          src="assets/fin/fin5.jpg"
+          class="rounded-lg w-full"
+          alt="Fin Photo 4"
+        />
+        <p class="caption">#1 Best dad ever</p>
+      </div>
+      <div class="polaroid slant-right">
+        <img
+          src="assets/fin/fin6.jpg"
+          class="rounded-lg w-full"
+          alt="Fin Photo 4"
+        />
+        <p class="caption">You're our hero!</p>
+      </div>
+      <div class="polaroid slant-left">
+        <img
+          src="assets/fin/fin7.jpg"
+          class="rounded-lg w-full"
+          alt="Fin Photo 4"
+        />
+        <p class="caption">We're your biggest fans!</p>
+      </div>
+      <div class="polaroid slant-right">
+        <img
+          src="assets/fin/fin8.jpg"
+          class="rounded-lg w-full"
+          alt="Fin Photo 4"
+        />
+        <p class="caption">The BEST DAD in the world!!</p>
+      </div>
+    </div>
+    <button
+      onclick="window.location.href='index.html'"
+      class="bg-white text-black mt-6 mb-20 px-8 py-3 rounded-2xl shadow-md font-[Nunito]"
+    >
+      📩 Seal your Giftbox!
+    </button>
+    <audio id="pageMusic" src="assets/music/intro_fin.mp3" autoplay loop></audio>
+  </body>
+</html>

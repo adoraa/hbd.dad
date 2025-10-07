@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inbox</title>
+    <link rel="icon" type="image/png" href="assets/favicon.ico" />
+   <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 min-h-screen font-[Nunito]">
+    <nav class="p-4 flex justify-between items-center bg-white shadow-md">
+      <div class="text-lg font-bold">🎁</div>
+      <button id="menuBtn" class="text-black">☰</button>
+    </nav>
+    <div id="menu" class="hidden flex-col p-4 space-y-2 bg-gray-100">
+      <a href="index.html" class="hover:underline">Restart</a>
+      <a href="dad.html" class="hover:underline">Say Cheese</a>
+      <a href="inbox.html" class="hover:underline">Inbox</a>
+      <a href="fin.html" class="hover:underline">Close Giftbox</a>
+    </div>
+
+    <div
+      id="messagesContainer"
+      class="grid grid-cols-1 md:grid-cols-2 gap-4 p-6"
+    ></div>
+
+    <audio id="pageMusic" src="assets/music/bg_music.mp3" autoplay loop></audio>
+    <script src="js/messages.js"></script>
+    <script>
+      document.getElementById("menuBtn").addEventListener("click", () => {
+        document.getElementById("menu").classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
