@@ -3,12 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Say Cheese, Dad!</title>
+    <title>Say Cheese!</title>
+    <link rel="icon" type="image/png" href="assets/favicon.ico" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Sofia&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        @keyframes textMove {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        50% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        100% {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+      }
+      .animated-text {
+        animation: textMove 3s ease-in-out infinite;
+      }
+    </style>
   </head>
   <body
     class="bg-white flex flex-col items-center justify-center min-h-screen text-center"
   >
+    <div class="text-3xl md:text-5xl animated-text mb-8 font-[Sofia]">
+      You've got mail! <br> <br>⇓
+    </div>
     <div class="grid grid-cols-2 gap-4 p-6">
       <div
         class="transform opacity-0 transition duration-700 ease-in"
