@@ -1,0 +1,24 @@
+{
+  "name": "hbd.dad",
+  "version": "1.0.0",
+  "description": "2025",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adoraa/hbd.dad.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adoraa/hbd.dad/issues"
+  },
+  "homepage": "https://github.com/adoraa/hbd.dad#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.14",
+    "tailwindcss": "^4.1.14"
+  }
+}
