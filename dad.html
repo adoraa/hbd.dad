@@ -5,73 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Say Cheese!</title>
     <link rel="icon" type="image/png" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="styles/output.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Sofia&display=swap"
       rel="stylesheet"
     />
-    <style>
-        @keyframes textMove {
-        0% {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        50% {
-          opacity: 1;
-          transform: translateY(0);
-        }
-        100% {
-          opacity: 0;
-          transform: translateY(-20px);
-        }
-      }
-      .animated-text {
-        animation: textMove 3s ease-in-out infinite;
-      }
-    </style>
   </head>
   <body
-    class="bg-white flex flex-col items-center justify-center min-h-screen text-center"
+    class="bg-white"
   >
-    <div class="text-3xl md:text-5xl animated-text mb-8 font-[Sofia]">
-      You've got mail! <br> <br>⇓
+    <nav class="p-4 flex justify-between items-center bg-white shadow-md">
+      <a href="index.html" class="text-2xl">🎁</a>
+      <button id="menuBtn" class="text-black text-2xl focus:outline-none">
+        ☰
+      </button>
+    </nav>
+
+    <div id="menu" class="hidden flex-col text-center">
+      <a href="index.html" class="nav">Restart</a>
+      <a href="dad.html" class="nav">Say Cheese</a>
+      <a href="inbox.html" class="nav">Inbox</a>
+      <a href="fin.html" class="nav">Close Giftbox</a>
     </div>
-    <div class="grid grid-cols-2 gap-4 p-6">
-      <div
-        class="transform opacity-0 transition duration-700 ease-in"
-        id="img1"
-      >
-        <img src="assets/images/dad1.jpg" class="rounded-2xl shadow-lg" />
-        <p class="mt-2 text-sm"></p>
+    <div class="flex flex-col items-center justify-center min-h-screen text-center">
+      <div class="text-3xl md:text-5xl animated-text mb-8 font-[Sofia]">
+        You've got mail! <br />
+        <br />⇓
       </div>
-      <div
-        class="transform opacity-0 transition duration-700 ease-in"
-        id="img2"
-      >
-        <img src="assets/images/dad3.jpg" class="rounded-2xl shadow-lg" />
-        <p class="mt-2 text-sm">A smile that lights the room</p>
+      <div class="grid grid-cols-2 gap-4 p-6">
+        <div
+          class="transform opacity-0 transition duration-700 ease-in"
+          id="img1"
+        >
+          <img src="assets/images/dad1.jpg" class="rounded-2xl shadow-lg" />
+          <p class="mt-2 text-sm"></p>
+        </div>
+        <div
+          class="transform opacity-0 transition duration-700 ease-in"
+          id="img2"
+        >
+          <img src="assets/images/dad3.jpg" class="rounded-2xl shadow-lg" />
+          <p class="mt-2 text-sm">A smile that lights the room</p>
+        </div>
+        <div
+          class="transform opacity-0 transition duration-700 ease-in"
+          id="img3"
+        >
+          <img src="assets/images/dad4.jpg" class="rounded-2xl shadow-lg" />
+          <p class="mt-2 text-sm">The best dad ever</p>
+        </div>
+        <div
+          class="transform opacity-0 transition duration-700 ease-in"
+          id="img4"
+        >
+          <img src="assets/images/dad2.jpg" class="rounded-2xl shadow-lg" />
+          <p class="mt-2 text-sm"></p>
+        </div>
       </div>
-      <div
-        class="transform opacity-0 transition duration-700 ease-in"
-        id="img3"
+      <button
+        onclick="window.location.href='inbox.html'"
+        class="bg-black text-white mt-6 mb-20 px-8 py-3 rounded-2xl shadow-md"
       >
-        <img src="assets/images/dad4.jpg" class="rounded-2xl shadow-lg" />
-        <p class="mt-2 text-sm">The best dad ever</p>
-      </div>
-      <div
-        class="transform opacity-0 transition duration-700 ease-in"
-        id="img4"
-      >
-        <img src="assets/images/dad2.jpg" class="rounded-2xl shadow-lg" />
-        <p class="mt-2 text-sm"></p>
-      </div>
+        Open Your Inbox
+      </button>
     </div>
-    <button
-      onclick="window.location.href='inbox.html'"
-      class="bg-black text-white mt-6 mb-20 px-8 py-3 rounded-2xl shadow-md"
-    >
-      Open Your Inbox
-    </button>
     <audio id="pageMusic" src="assets/music/bg_music.mp3" autoplay loop></audio>
     <script>
       window.onload = () => {
@@ -83,5 +81,6 @@
         });
       };
     </script>
+    <script src="js/nav.js"></script>
   </body>
 </html>

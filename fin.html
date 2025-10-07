@@ -5,50 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FIN</title>
     <link rel="icon" type="image/png" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="styles/output.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Sofia&display=swap"
       rel="stylesheet"
     />
-    <style>
-      .polaroid {
-        background: white;
-        padding: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        width: 80%;
-        max-width: 300px;
-        margin: 16px auto;
-        transform-origin: center;
-      }
-      .slant-left {
-        transform: rotate(-5deg);
-      }
-      .slant-right {
-        transform: rotate(5deg);
-      }
-      .caption {
-        font-size: 0.8rem;
-        margin-top: 4px;
-        color: #333;
-      }
-      @keyframes textMove {
-        0% {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        50% {
-          opacity: 1;
-          transform: translateY(0);
-        }
-        100% {
-          opacity: 0;
-          transform: translateY(-20px);
-        }
-      }
-      .animated-text {
-        animation: textMove 3s ease-in-out infinite;
-      }
-    </style>
   </head>
   <body
     class="bg-black text-white min-h-screen flex flex-col items-center justify-start pt-8 font-[Sofia]"
